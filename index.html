@@ -3,24 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HotBeansWeb</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
-<link rel="stylesheet" href="css/style.css">
-
 <body>
-    <img src="images/Cat amogus.jpg" alt="" class="img1">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat iusto numquam eius deserunt sapiente tempora reprehenderit id modi ab, nesciunt officia aperiam quia doloribus culpa laudantium quis ratione perspiciatis. Earum?
-    Facere illo doloribus alias numquam iure itaque ex at debitis a. Pariatur totam voluptatibus ab, repudiandae, accusamus corporis exercitationem fuga in unde blanditiis ipsum natus aliquid dolorem enim voluptas libero.
-    Accusamus officiis ducimus minus veritatis! Accusamus, ex libero similique sapiente odio ipsam officia rerum a, voluptatem deleniti neque cum quasi ea modi enim adipisci recusandae excepturi velit. Doloremque, ipsam obcaecati.
-    Corporis voluptas explicabo atque laborum maxime animi mollitia iste ducimus commodi ea minus consequuntur nulla eius reprehenderit eligendi sed quis tempore laboriosam, eaque ex! Libero dolore vitae aliquam sint reprehenderit!
-    Repellendus error libero quod mollitia dolor corporis explicabo animi modi ad vitae consectetur quisquam esse reprehenderit provident obcaecati accusantium nostrum quo, praesentium eligendi inventore incidunt. Voluptas sunt obcaecati dicta incidunt?</p>
-    <footer> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum vitae unde esse dolorum perspiciatis rem repudiandae corporis provident dignissimos, similique laudantium voluptatum quaerat odio doloremque? Laboriosam in autem amet!</footer>
-    <img src="images/Goofy Cat.jpg" alt="" class="img2">
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus veritatis ea, fugit accusamus nihil natus doloremque molestias sit nemo facilis maxime odit, blanditiis eius repellat nulla earum sapiente illum quae.
-    Ea quis, nulla quae inventore velit iste dolores. Aspernatur similique minima commodi odio deleniti optio minus voluptate deserunt cupiditate tempore quasi inventore in molestiae, omnis totam ex iusto fugiat quaerat?
-    Quae quidem ipsam, repellat, tenetur vel in minima saepe perspiciatis ducimus magni sit iusto dicta possimus adipisci aspernatur qui eligendi consequuntur officia? Ducimus harum ea vero rem? Rerum, fuga assumenda!
-    Necessitatibus amet ullam, omnis nobis sit, quasi neque deserunt corrupti autem cum nulla sunt ratione velit ipsum maiores itaque! Excepturi voluptatum harum sunt temporibus recusandae. Impedit enim veritatis sint nesciunt.
-    Unde eveniet perspiciatis iusto magni reiciendis nobis id alias fuga, dolor incidunt vitae numquam blanditiis porro illo voluptate. Eos doloremque architecto non facere earum autem temporibus rerum, vero molestiae illo.</p>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="/images/Logo .png" width="125" height="125" alt="logo">
+                </a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="main-menu" id="main-menu">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a class="btn btn-primary" href="#"><i class="apply-btn"></i> Apply</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="herocontent">
+                <h1 class="hero-heading">Hot Beans Web</h1>
+                <p>Professional Web Development since 2018</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-aboutus">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ability Card -->
+    <h1 class="abilitycard-heading">We are...</h1>
+    <section class="abilitycard">
+        <div class="card-grid">
+            <div class="card">
+                <img src="images/Icons/IconEfficient.png" alt="Icon">
+                <p>We are efficient</p>
+            </div>
+            <div class="card">
+                <img src="images/Icons/IconCreative.png" alt="Icon">
+                <p>We are creative</p>
+            </div>
+            <div class="card">
+                <img src="images/Icons/IconFast.png" alt="Icon">
+                <p>We are fast</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Page -->
+    <section class="content-container">
+        <div class="content-img">
+            <img src="images/AboutUs.png" alt="Professional Website">
+        </div>
+        <div class="content-text">
+            <h1>We build your professional website</h1>
+            <p>
+                Since 2018, we have been confident in building you the best website,
+                fast and at the best price. 
+                The company is based in the UK, founded by Andre Beckley, a professional programmer,
+                with the aim of helping various companies create their websites. 
+                He decided then to unify a group of people competent for the creation of professional websites.  
+            </p>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="about-us">
+        <h1 class="about-us__heading text-xxl">About Us</h1>
+        <div class="about-us-grid">
+            <div class="about-us-item">
+                <p>Andre Beckley (Founder)</p>
+                <div class="message">I have created this company for 6 years now, with the expectation of creating a technical and professional environment for my employers. 
+                    And thanks to their hard work I managed to create this environment, and you are invited.</div>
+            </div>
+            <div class="about-us-item">
+                <p>Elon Musk (Full stack developer)</p>
+                <div class="message">I have been working here for 3 years and I have managed to complete all the courses offered by them, now I have become a full stack developer, and we are the most professional in this industry, 
+                    with more than 25 partnerships and 10 awards between 2019 and 2024.</div>
+            </div>
+            <div class="about-us-item">
+                <p>Jeff Bezos (CEO)</p>
+                <div class="message">This company is not only about web development, but also about personal growth,
+                    for us it is very important that our employers are able to leave with a skill set that they can carry forward and proudly talk about our company.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses">
+        <h1 class="courses-heading text-xl">Courses</h1>
+        <p class="courses-subheading text-lg">We provide the best courses to facilitate this new path for you</p>
+        <div class="courses-grid">
+            <div class="courses-item">
+                <img src="/images/Icons/fCodeIcon.png" alt="Course 1">
+                <button class="btn select-btn">Select</button>
+            </div>
+            <div class="courses-item">
+                <img src="/images/Icons/UdemyIcon.png" alt="Course 2">
+                <button class="btn select-btn">Select</button>
+            </div>
+            <div class="courses-item">
+                <img src="/images/Icons/W3sIcon.png" alt="Course 3">
+                <button class="btn select-btn">Select</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apply Now Section -->
+    <section class="apply-now">
+        <h1 class="text-xl">And now we need you</h1>
+        <p class="text-lg">Come with us to build the best websites</p>
+        <a href="#" class="btn btn-primary">Apply Now</a>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-us">
+        <h1 class="contact-heading">Contact Us</h1>
+        <div class="contact-grid">
+            <div class="contact-form">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="first-name">First name</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+            <div class="contact-image">
+                <img src="/images/ContactUs.png" alt="Contact Us">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 HotBeansWeb. All Rights Reserved.</p>
+                <ul class="footer-nav">
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </footer>
+
+    <script src="javascript/script.js"></script>
 </body>
 </html>
