@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root { 
+    --primary-color: #C57B57;
+    --dark-color: #251605;
+    --light-color: #F1AB86;   
+}
+
+body {
+    font-family: 'Inter', sans-serif ;
+    font-size: 16px;
+    
+    line-height: 1.5;
+    background: #fff;
+}
+
+  
+a {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* NavBar */
+.navbar {
+    background: var(--primary-color);
+    padding: 10px;
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .main-menu ul {
+    display: flex;
+}
+
+.navbar ul li a {
+    padding: 10px 20px;
+    display: block;
+    font-weight: 500;
+    transition: 0.5s;   
+}
+
+.navbar ul li a:hover {
+    color: var(--light-color);
+}
+
+.navbar ul li a i {
+    margin-right: 10px;
+}
+
+.navbar ul li:last-child a {
+    margin-left: 10px
+}
+
+/* Utility Classes */
+.container{ 
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.container-sm{ 
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 13px 20px;
+    background: var(--dark-color);
+    color: var(--light-color);
+    font-weight: 1000;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+
+
+
+  
+  
