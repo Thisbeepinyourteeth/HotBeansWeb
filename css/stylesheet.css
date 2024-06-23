@@ -107,7 +107,7 @@ img {
 .hero {
     min-height: 100vh;
     width: 100%;
-    background-image: url('/images/HeroBackGroud.jpg');
+    background-image: url('/images/herobackground.jpg');
     background-position: center;
     background-size: cover;
     position: relative;
@@ -225,9 +225,13 @@ img {
     
 }
 .about-us-grid {
+    width: 85%;
+    margin: auto;
     display: grid;
+    text-align: center;
+    justify-content: center;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-gap: 30px;
 }
 .about-us-item {
     background-color: var(--dark-color);
@@ -257,10 +261,13 @@ img {
 }
 
 .courses-grid {
+    width: 85%;
+    margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
     text-align: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
 }
 .courses-item {
     background-color: var(--primary-color);
@@ -323,7 +330,7 @@ img {
 }
 
 .contact-image img {
-    width: 100%;
+    width: 50%;
     border-radius: 10px;
 }
 
@@ -344,20 +351,66 @@ img {
     border: 1px solid var(--dark-color);
 }
 
-.btn {
-    background: var(--dark-color);
-    color: var(--light-color);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
 .btn:hover {
     background: var(--light-color);
     color: var(--dark-color);
 }
+
+/* Registration/Apply Section */
+
+.registration-form {
+    padding: 50px 0;
+    background-color: var(--light-color);
+    margin: 8% ;
+}
+
+.registration-form .container {
+    max-width: 500px;
+    background: var(--primary-color);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.registration-form .form-group {
+    margin-bottom: 15px;
+}
+
+.registration-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.registration-form .form-group input[type="text"],
+.registration-form .form-group input[type="email"],
+.registration-form .form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--light-color);
+    border-radius: 5px;
+}
+
+.registration-form .btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.registration-form .btn-primary:hover {
+    background-color: var(--light-color);
+}
+
 
 /* Footer */
 .footer {
@@ -461,11 +514,17 @@ img {
         padding-left: 0;
     }
     .about-us-grid {
-        grid-template-columns: repeat(auto-fill, minmax(150, 1fr));
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .courses-grid {
+        grid-template-columns: repeat(1, 1fr);     
     }
 }
 @media (max-width: 480px) {
     .about-us-grid {
+        grid-template-columns: 1fr;
+    }
+    .courses-grid {
         grid-template-columns: 1fr;
     }
 }
