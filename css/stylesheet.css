@@ -291,6 +291,20 @@ img {
     background-color: var(--accent-color);
     color: var(--dark-color);
 }
+/* Job Specification Section */
+.job-description {
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+.job-h1 {
+    font-size: 44.5px;
+    margin: 20px;   
+}
+.t1-jb {
+    font-weight: 700;
+}
+
 /* Apply Now Section */
 .apply-now {
     background: var(--primary-color);
